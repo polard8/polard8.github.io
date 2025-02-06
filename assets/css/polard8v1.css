@@ -82,7 +82,7 @@ a:hover {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: #F3770B;
+    color: #B00020;
     display: inline-block;
 }
 .polard8-nav a:hover {
@@ -98,7 +98,7 @@ a:hover {
 /* 1.4 ) .polard8-header    - Header */
 .polard8-header{
     font-size: 3.5vw;
-    color: #F3770B;
+    color: #B00020;
     text-align: center;
     text-transform: uppercase;
 }
@@ -128,7 +128,7 @@ a:hover {
     font-size: 4.5vw;
     text-align: center;
     color: #fff;
-    background-color: #F3770B;
+    background-color: #B00020;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom-color: rgba(0, 0, 0, 0.25);
     border-radius: .25rem;
@@ -136,7 +136,7 @@ a:hover {
     display: inline-block;
 }
 .polard8-button:hover {
-    background-color: #F3770B;
+    background-color: #A00000;
     text-decoration: none;
 }
 .polard8-button:focus {
@@ -191,7 +191,7 @@ a:hover {
 .polard8-nav a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #F3770B;
+    color: #B00020;
     display: inline-block;
 }
 .polard8-nav a:hover {
@@ -236,7 +236,7 @@ a:hover {
     font-size: 2.2vw;
     text-align: center;
     color: #fff;
-    background-color: #F3770B;
+    background-color: #B00020;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom-color: rgba(0, 0, 0, 0.25);
     border-radius: .25rem;
@@ -244,7 +244,7 @@ a:hover {
     display: inline-block;
 }
 .polard8-button:hover {
-    background-color: #F3770B;
+    background-color: #A00000;
     text-decoration: none;
 }
 .polard8-button:focus {
