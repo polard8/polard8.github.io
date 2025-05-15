@@ -6,14 +6,14 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Polar D8</title>
+<title>EFGAB</title>
 
     <meta 
         name="viewport" 
         content="width=device-width, initial-scale=1.0">
     <meta 
         name="description" 
-        content="Polar D8 Organization">
+        content="EFGAB Organization">
     <meta 
         name="author" 
         content="Fred Nora">

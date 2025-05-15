@@ -13,7 +13,7 @@
         content="width=device-width, initial-scale=1.0">
     <meta 
         name="description" 
-        content="Polar D8 Organization">
+        content="EFGAB Organization">
     <meta 
         name="author" 
         content="Fred Nora">
@@ -84,7 +84,7 @@
 
     <!-- Core module -->
     <div class="core">
-    <h1>Polar D8 Organization</h1>
+    <h1>EFGAB Organization</h1>
 
     <br>
     <?php
@@ -112,7 +112,7 @@
         <br/>
         <a 
             class="button" 
-            href="https://github.com/polard8/polard8.github.io">
+            href="https://github.com/efgab/efgab.github.io">
             <img class="iconpos" 
                 width="20" 
                 height="20" 

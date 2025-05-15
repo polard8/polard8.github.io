@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Gramado</title>
+<title>EFGAB 02</title>
 <link href="./assets/css/gramado.css" rel="stylesheet">
 </head>
 
