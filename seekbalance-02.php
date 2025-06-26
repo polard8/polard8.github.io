@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>EFGAB 02</title>
+<title>Seek Balance 02</title>
 <link href="./assets/css/gramado.css" rel="stylesheet">
 </head>
 
