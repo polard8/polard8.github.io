@@ -6,14 +6,14 @@
 
 <head>
 <meta charset="UTF-8">
-<title>EFGAB</title>
+<title>Seek Balance</title>
 
     <meta 
         name="viewport" 
         content="width=device-width, initial-scale=1.0">
     <meta 
         name="description" 
-        content="EFGAB Organization">
+        content="Seek Balance Organization">
     <meta 
         name="author" 
         content="Fred Nora">
