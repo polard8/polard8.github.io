@@ -9,9 +9,7 @@
 
 <body onload="gramadoInitialize()">
 
-    <?php 
-        echo "<h1>Hello world!</h1>";
-    ?>
+    <?php   echo "<h1>Hello world!</h1>";   ?>
 
 <script src="../assets/js/gramado.js"></script>
 </body>
