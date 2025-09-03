@@ -19,43 +19,68 @@
         content="Fred Nora">
 
 <style>
-            /*
-            body {
-                background-color: green
-            }
-            */
+/*
+body {
+    background-color: green
+}
+*/
 
-            .core {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                border-radius: .33rem;
-                padding: 10px;
-                background-color: lightyellow; /*#44ab44;*/
-                box-shadow: 10px 10px lightgray;
-                text-align: center;
-            }
+.core {
+             
+    /*position: absolute;*/
+    margin: 3rem auto;
+    padding: 2rem;
+    max-width: 640px;
+    /*transform: translate(-50%, -50%);*/
+    /*border-radius: .33rem;*/
+    border-radius: 1rem;
+    padding: 10px;
+    /*background-color: lightyellow;*/
+    background: rgba(255,255,255,0.97);
+    /*box-shadow: 10px 10px lightgray;*/
+    box-shadow: 0 8px 32px rgba(44,123,123,0.13);
+    text-align: center;
+}
 
-            .button {
-                border: solid black 1px;
-                border-radius: .25rem;
-                padding: 10px;
-                color: black;
-                text-decoration: auto;
-                text-align: center;
-            }
+.core h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2e7d32;
+    margin-bottom: 1.2rem;
+    letter-spacing: .03em;
+}
 
-            .noicon {
-                padding-left: 30px;
-            }
+.button {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: auto;
+    text-align: center;
+    margin-top: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: solid black 1px;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    color: black;
+    cursor: pointer;
+}
 
-            .iconpos {
-            }
+.button:hover {
+    background-color: lightyellow;
+}
 
-            .button:hover{
-                background-color: lightyellow;
-            }
+.button img {
+    vertical-align: middle;
+}
+
+.noicon {
+    padding-left: 30px;
+}
+
+.iconpos {
+}
+
 </style>
 
 <!-- Prefetch -->
@@ -70,6 +95,7 @@
 
     <!-- Navigation bar -->
     <nav class="gramado-nav">
+        <!-- <img class="gramado-logo" src="../assets/img/polard8.png" alt="Logo"> -->
         <ul>
             <!-- 4: User -->
             <li><a href="#section-4">User</a></li>
@@ -84,6 +110,7 @@
 
     <!-- Core module -->
     <div class="core">
+    <img class="gramado-logo" src="../assets/img/polard8.png" alt="Logo">
     <h1>Seek Balance Organization</h1>
 
     <br>
