@@ -10,6 +10,12 @@
     --polard8-color-gray6:  #c0c0c0;
     --polard8-color-gray7:  #e0e0e0;
     --polard8-color-white:  #ffffff;
+/* App components */
+/* This helps you quickly theme or brand the library. */
+    --polard8-color-primary: #F3770B;
+    --polard8-color-secondary: #222;
+    --polard8-color-accent: #0089FF;
+    --polard8-color-bg: #FAFAFA;
 /* ... */
 }
 
@@ -53,7 +59,14 @@ a {
 a:hover {
     color: #0089FF;
 }
-
+a:focus {
+    outline: 2px solid #F3770B;  /*High-contrast orange outline*/ 
+    outline-offset: 2px;          /*Small space between outline and link*/ 
+}
+a:focus-visible {
+    outline: 2px solid #F3770B;  /* High-contrast orange outline */
+    outline-offset: 2px;
+}
 
 /* 
  * Small screen: ------------------------------
