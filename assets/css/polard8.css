@@ -307,6 +307,11 @@ a:focus-visible {
     padding: 10px 0;
     margin: 0 12px 12px 12px;   /* More horizontal and vertical space */
     border-radius: 8px;         /* More rounded corners for large screens */
+    color: #e0e0e0;
+}
+.polard8-sidebar a:hover,
+.polard8-sidebar a:focus {
+    color: #e0e0e0;
 }
 
 .polard8-sidebar-image {
