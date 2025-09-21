@@ -125,23 +125,38 @@ a:focus-visible {
 }    
 
 .polard8-sidebar a {
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #F3770B;
-    display: inline-block;
-}
-.polard8-sidebar a:hover {
-    background-color: rgba(256, 256, 256, .9); 
+  display: block;               /* Full clickable block for tap targets */
+  text-align: center;           /* Center text for both icons and text */
+  text-decoration: none;        /* Remove underline */
+  text-transform: uppercase;    /* Consistent look */
+  color: #F3770B;               /* Brand color */
+  font-weight: 500;             /* Slightly bolder for readability */
+  padding: 12px 0;              /* Touch-friendly vertical padding */
+  border-radius: 6px;           /* Slightly rounded corners */
+  transition: background 0.2s, color 0.2s;  /* Smooth hover effect */
+  margin: 0 8px 8px 8px;        /* Space between links */
+  font-size: 1.2em;             /* Slightly larger for accessibility */
 }
 
+.polard8-sidebar a:hover,
+.polard8-sidebar a:focus {
+  background: rgba(243, 119, 11, 0.1);   /* Subtle brand highlight */
+  color: #d35e00;                        /* Slightly darker on hover */
+  text-decoration: underline;            /* Optional: show underline on hover */
+  outline: none;                         /* Remove default focus outline */
+}
+
+
 .polard8-sidebar-image {
-    width: 120px;          /* Fixed width, adjust as you like */
-    height: auto;          /* Maintain aspect ratio */
-    display: block;        /* Center horizontally */
-    margin: 0 auto 24px auto; /* Center + spacing below */
-    border-radius: 8px;    /* Optional: rounded corners */
-    max-width: 80%;        /* Prevent overflow if sidebar is narrow */
+  display: block;
+  margin-left: auto;
+  margin-top: 8px;
+  margin-right: auto;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  max-width: 80%;
+  width: 120px;
+  height: auto;
 }
 
 .polard8-main-content {
@@ -272,7 +287,7 @@ a:focus-visible {
     height: 100vh;
     background: #222;
     color: #fff;
-    padding-top: 40px;
+    padding-top: 0px;
     box-shadow: 2px 0 8px rgba(0,0,0,0.10);
     z-index: 1000;
 }
@@ -288,26 +303,23 @@ a:focus-visible {
 }
 
 .polard8-sidebar a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    padding: 8px 24px;
-    display: block;
-    border-radius: 4px;
-    transition: background 0.2s;
-}
-
-.polard8-sidebar a:hover {
-    background: #444;
+    font-size: 1em;             /* Slightly smaller font for desktop */
+    padding: 10px 0;
+    margin: 0 12px 12px 12px;   /* More horizontal and vertical space */
+    border-radius: 8px;         /* More rounded corners for large screens */
 }
 
 .polard8-sidebar-image {
-    width: 64px;          /* Fixed width, adjust as you like */
-    height: auto;          /* Maintain aspect ratio */
-    display: block;        /* Center horizontally */
-    margin: 0 auto 12px auto; /* Center + spacing below */
-    border-radius: 8px;    /* Optional: rounded corners */
-    max-width: 80%;        /* Prevent overflow if sidebar is narrow */
+  display: block;
+  /*margin: 0 auto 24px auto;*/
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin
+  border-radius: 16px; /* More visible rounding */
+  max-width: 80%;
+  width: 120px;
+  height: auto;
+  background: transparent; /* Just in case */
 }
 
 /* Push main content to the right */
