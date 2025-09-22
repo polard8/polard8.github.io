@@ -7,25 +7,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Search</title>
-
-    <meta 
-        name="viewport" 
-        content="width=device-width, initial-scale=1.0">
-    <meta 
-        name="description" 
-        content="Seek Balance Organization">
-    <meta 
-        name="author" 
-        content="Fred Nora">
+<meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+<meta 
+    name="description" 
+    content="Seek Balance Organization">
+<meta 
+    name="author" 
+    content="Fred Nora">
 
 <style>
-/*
-body {
-    background-color: green
-}
-*/
 
-.core {
+.popup_container {
              
     /*position: absolute;*/
     margin: 3rem auto;
@@ -41,8 +35,7 @@ body {
     box-shadow: 0 8px 32px rgba(44,123,123,0.13);
     text-align: center;
 }
-
-.core h1 {
+.popup_container h1 {
     font-size: 2.2rem;
     font-weight: 700;
     color: #2e7d32;
@@ -50,6 +43,7 @@ body {
     letter-spacing: .03em;
 }
 
+/* Customized button for this popup */
 .button {
     font-size: 1rem;
     font-weight: 600;
@@ -65,21 +59,20 @@ body {
     color: black;
     cursor: pointer;
 }
-
 .button:hover {
     background-color: lightyellow;
 }
-
 .button img {
     vertical-align: middle;
 }
 
+/*
 .noicon {
     padding-left: 30px;
 }
-
 .iconpos {
 }
+*/
 
 </style>
 
@@ -108,12 +101,11 @@ body {
         </ul>
     </nav>
 
-    <!-- Core module -->
-    <div class="core">
+    <!-- popup_container module -->
+    <div class="popup_container">
     <img class="gramado-logo" src="../assets/img/polard8.png" alt="Logo">
     <h1>Seek Balance Organization</h1>
 
-    <br>
     <?php
         $cwd = getcwd();
         $filename_list = scandir($cwd);
@@ -136,7 +128,6 @@ body {
 
         <!-- Button -->
         <br/>
-        <br/>
         <a 
             class="button" 
             href="https://github.com/seekbalance/seekbalance.github.io">
@@ -148,7 +139,7 @@ body {
 
         <br/>
         <br/>
-        <br/>
+
     </div>
 
 <!-- Cool scripts -->
