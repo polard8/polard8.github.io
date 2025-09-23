@@ -90,14 +90,14 @@
     <nav class="gramado-nav">
         <!-- <img class="gramado-logo" src="../assets/img/polard8.png" alt="Logo"> -->
         <ul>
-            <!-- 4: User -->
-            <li><a href="#section-4">User</a></li>
-            <!-- 3: Sales person -->
-            <li><a href="#section-3">Online communication</a></li>
-            <!-- 2: Business person -->
-            <li><a href="#section-2">Business</a></li>
             <!-- 1: Developer -->
-            <li><a href="#section-1">Developer</a></li>
+            <li><a href="developer/index.html">Developer</a></li>
+            <!-- 2: Business person -->
+            <li><a href="business/index.html">Business</a></li>
+            <!-- 3: Sales person -->
+            <li><a href="online/index.html">Online communication</a></li>
+            <!-- 4: User -->
+            <li><a href="user/index.html">User</a></li>
         </ul>
     </nav>
 
@@ -113,7 +113,8 @@
         {
             /* Only directory names with alphanumeric elements */
             if ( is_dir($filename) && 
-                 ctype_alnum($filename) )
+                 ctype_alnum($filename) &&
+                 $filename != 'assets')
             {
     ?>
 
