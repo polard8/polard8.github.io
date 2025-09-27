@@ -20,6 +20,7 @@
         margin: 0;
         min-height: 100vh;
     }
+    /*
     .gramado-nav {
         position: sticky;
         top: 0;
@@ -47,6 +48,7 @@
     .gramado-nav li a:hover {
         color: #2e7d32;
     }
+    */
 
     .logo {
         width: 40px;
@@ -56,7 +58,7 @@
     }
 
     .core {
-        max-width: 450px;
+        max-width: 640px;
         margin: 3rem auto;
         padding: 2rem;
         background: rgba(255,255,255,0.97);
@@ -138,7 +140,6 @@
 <body>
     <!-- Navigation bar with logo -->
     <nav class="gramado-nav">
-        <img class="logo" src="../assets/img/polard8.png" alt="Logo">
         <ul>
             <li><a href="#section-4">User</a></li>
             <li><a href="#section-3">Online communication</a></li>
@@ -148,6 +149,7 @@
     </nav>
 
     <div class="core">
+        <img class="logo" src="../assets/img/polard8.png" alt="Logo">
         <h1>Seek Balance Organization</h1>
         <div class="directory-list">
         <?php
@@ -155,7 +157,9 @@
             $filename_list = scandir($cwd);
             foreach ($filename_list as $filename)
             {
-                if (is_dir($filename) && ctype_alnum($filename))
+                if ( is_dir($filename) && 
+                     ctype_alnum($filename) &&
+                     $filename != 'assets' )
                 {
                     // Adding an icon for visual enhancement (font-awesome or SVG possible)
                     echo '<a class="card-link" href="/' . htmlspecialchars($filename) . '/index.html">'

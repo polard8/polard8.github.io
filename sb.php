@@ -19,43 +19,37 @@
         content="Fred Nora">
 
 <style>
-            /*
-            body {
-                background-color: green
-            }
-            */
 
-            .core {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                border-radius: .33rem;
-                padding: 10px;
-                background-color: lightyellow; /*#44ab44;*/
-                box-shadow: 10px 10px lightgray;
-                text-align: center;
-            }
+.core {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: .33rem;
+    padding: 10px;
+    background-color: lightyellow; /*#44ab44;*/
+    box-shadow: 10px 10px lightgray;
+    text-align: center;
+}
 
-            .button {
-                border: solid black 1px;
-                border-radius: .25rem;
-                padding: 10px;
-                color: black;
-                text-decoration: auto;
-                text-align: center;
-            }
+.button {
+    border: solid black 1px;
+    border-radius: .25rem;
+    padding: 10px;
+    color: black;
+    text-decoration: auto;
+    text-align: center;
+}
+.button:hover{
+    background-color: lightyellow;
+}
 
-            .noicon {
-                padding-left: 30px;
-            }
+.noicon {
+    padding-left: 30px;
+}
+.iconpos {
+}
 
-            .iconpos {
-            }
-
-            .button:hover{
-                background-color: lightyellow;
-            }
 </style>
 
 <!-- Prefetch -->
@@ -71,21 +65,19 @@
     <!-- Header -->
     <h1>Polar D8 Organization</h1>
 
-    <br>
     <?php
         $cwd = getcwd();
         $file_list = scandir($cwd);
         foreach ($file_list as $file)
         {
             if ( is_dir($file) && 
-                 ctype_alnum($file) )
+                 ctype_alnum($file) && 
+                 ($file != 'assets') )
             {
     ?>
-
-                <!-- Button -->
-                <br/>
-                <a href="/<?php echo $file; ?>/index.html"><?php echo $file; ?>/</a>
-
+        <!-- Link -->
+        <br/>
+        <a href="/<?php echo $file; ?>/index.html"><?php echo $file; ?>/</a>
     <?php
             }
         }

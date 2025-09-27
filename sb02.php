@@ -8,9 +8,10 @@
 
 <body onload="gramadoInitialize()">
 
-<?php 
-    echo "<h1>Hello world!</h1>";
-?>
+    <div class="gramado-container">
+    <?php echo "<h1>Hello world!</h1>"; ?>
+    <?php echo "<span>This is Seek Balance Organization</span>"; ?>
+    </div>
 
 <script src="./assets/js/gramado.js"></script>
 </body>

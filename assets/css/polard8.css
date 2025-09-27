@@ -174,7 +174,7 @@ a:focus-visible {
 }
 
 /* 1.4 ) .polard8-header    - Header */
-.polard8-header{
+.polard8-header {
     font-size: 3.5vw;
     color: #F3770B;
     text-align: center;
@@ -319,7 +319,6 @@ a:focus-visible {
   /*margin: 0 auto 24px auto;*/
   margin-top: 4px;
   margin-bottom: 4px;
-  margin
   border-radius: 16px; /* More visible rounding */
   max-width: 80%;
   width: 120px;

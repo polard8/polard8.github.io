@@ -117,11 +117,9 @@
                  $filename != 'assets')
             {
     ?>
-
-                <!-- Button -->
-                <br/>
+                <!-- Link -->
                 <a href="/<?php echo $filename; ?>/index.html"><?php echo $filename; ?>/</a>
-
+                <br/>
     <?php
             }
         }
