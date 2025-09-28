@@ -106,22 +106,24 @@ a:focus-visible {
 
 .polard8-sidebar {
     width: 100vw;
-    height: auto;
     position: static;
     box-shadow: none;
     padding-top: 0; 
 }
 
 .polard8-sidebar ul {
-    text-align: center;
+    list-style: none;
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* horizontally center items */
+    justify-content: center;  /* vertically center items */
+    min-height: 100vh;        /* full screen height */
 }
 .polard8-sidebar li {
-    width: fit-content;
-    text-align: center;
-    display: block;
-    /*padding: 0.4% 0.2% 0.2% 0.2%;*/
-    padding: 0.2% 0.2% 0.2% 0.2%;
+    width: 100%;              /* full width */
+    margin: 8px 0;            /* spacing between links */
 }    
 
 .polard8-sidebar a {
@@ -272,7 +274,6 @@ a:focus-visible {
     text-decoration: none;
     text-transform: uppercase;
     color: #F3770B;
-    display: inline-block;
 }
 .polard8-nav a:hover {
     background-color: rgba(256, 256, 256, .9); 
@@ -293,21 +294,24 @@ a:focus-visible {
 }
 
 .polard8-sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 24px 12px;   /* optional spacing */
+    height: 100vh;        /* if you want vertical-centering below */
+    box-sizing: border-box;
 }
 
 .polard8-sidebar li {
-    margin: 16px 0;
+    width: 100%;          /* override the earlier width: fit-content */
+    margin: 12px 0;       /* vertical spacing between items */
 }
 
 .polard8-sidebar a {
-    font-size: 1em;             /* Slightly smaller font for desktop */
-    padding: 10px 0;
-    margin: 0 12px 12px 12px;   /* More horizontal and vertical space */
-    border-radius: 8px;         /* More rounded corners for large screens */
-    color: #e0e0e0;
+    display: block !important;    /* full-width clickable area */
+    width: 100% !important;
+    box-sizing: border-box;
+    text-align: center !important;/* center the text */
+    padding: 10px 12px;
+    margin: 0;                    /* keep margins on the li, not the a */
+    color: #F0F0F0;
 }
 .polard8-sidebar a:hover,
 .polard8-sidebar a:focus {
