@@ -34,6 +34,8 @@
     /*box-shadow: 10px 10px lightgray;*/
     box-shadow: 0 8px 32px rgba(44,123,123,0.13);
     text-align: center;
+
+    border: solid lightgray 1px;
 }
 .popup_container h1 {
     font-size: 2.2rem;
@@ -60,7 +62,7 @@
     cursor: pointer;
 }
 .button:hover {
-    background-color: lightyellow;
+    background-color: lightgray;
 }
 .button img {
     vertical-align: middle;
