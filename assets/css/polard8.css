@@ -10,12 +10,26 @@
     --polard8-color-gray6:  #c0c0c0;
     --polard8-color-gray7:  #e0e0e0;
     --polard8-color-white:  #ffffff;
-/* App components */
-/* This helps you quickly theme or brand the library. */
-    --polard8-color-primary: #F3770B;
-    --polard8-color-secondary: #222;
-    --polard8-color-accent: #0089FF;
+
+/* Colors for app components - Part 1 */
+    --polard8-color-brand: #F3770B;
     --polard8-color-bg: #FAFAFA;
+    --polard8-color-header: #202020;
+    --polard8-color-footer: #C0C0C0;
+    --polard8-color-link: #0069d6;
+    --polard8-color-link-hover: #0089FF;
+    --polard8-color-link-focus: #F3770B;  /*High-contrast orange outline*/
+    --polard8-color-link-focus-visible: #F3770B; /*High-contrast orange outline*/
+    --polard8-color-text: #202020;
+
+/* Colors for app components - Part 2 */
+    --polard8-color-neutral: #E0E0E0;
+    --polard8-color-primary: #202020;
+    --polard8-color-secondary: #F3770B;
+
+/* Colors for app components - Part 3 */
+    --polard8-color-accent: #0089FF;
+
 /* ... */
 }
 
@@ -47,24 +61,24 @@ html, body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FAFAFA;
+    background-color: var(--polard8-color-bg)
 }
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
 }
 a {
-    color: #0069d6;
+    color: var(--polard8-color-link)
 }
 a:hover {
-    color: #0089FF;
+    color: var(--polard8-color-link-hover)
 }
 a:focus {
-    outline: 2px solid #F3770B;  /*High-contrast orange outline*/ 
+    outline: 2px solid var(--polard8-color-link-focus);  /*High-contrast orange outline*/ 
     outline-offset: 2px;          /*Small space between outline and link*/ 
 }
 a:focus-visible {
-    outline: 2px solid #F3770B;  /* High-contrast orange outline */
+    outline: 2px solid var(--polard8-color-link-focus-visible);  /* High-contrast orange outline */
     outline-offset: 2px;
 }
 
@@ -102,7 +116,9 @@ a:focus-visible {
     background-color: rgba(256, 256, 256, .9); 
 }
 
-/* Sidebar for small screens */
+/* 
+    Sidebar for small screens 
+*/
 
 .polard8-sidebar {
     width: 100vw;
@@ -178,9 +194,9 @@ a:focus-visible {
 /* 1.4 ) .polard8-header    - Header */
 .polard8-header {
     font-size: 3.5vw;
-    color: #F3770B;
     text-align: center;
     text-transform: uppercase;
+    color: var(--polard8-color-header);
 }
 
 .polard8-header-image {
@@ -235,7 +251,7 @@ a:focus-visible {
 .polard8-footer {
     font-size: 3.5vw;
     text-align: center;
-    color: #F0F0F0;
+    color: var(--polard8-color-footer);
     padding-bottom: 2%;
 }
 .polard8-footer-logo {
@@ -348,7 +364,7 @@ a:focus-visible {
 /* 1.4 ) .polard8-header    - Header */
 .polard8-header{
     font-size: 1.8vw;
-    color: #202020;
+    color: var(--polard8-color-header);
 }
 .polard8-header-image {
     text-align: center;
@@ -402,7 +418,7 @@ a:focus-visible {
 .polard8-footer {
     font-size: 1.4vw;
     text-align: center;
-    color: #c0c0c0;
+    color: var(--polard8-color-footer);
     padding-bottom: 2%;
 }
 .polard8-footer-logo {
