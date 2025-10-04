@@ -6,7 +6,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Seek Balance</title>
+<title>Polar D8</title>
 
     <meta 
         name="viewport" 
